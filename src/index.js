@@ -2,18 +2,29 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as bootstrap from "bootstrap";
-import ContadorReducer from "./Contador";
-import ContadorBasico from "./ContadorBasicoRedux";
+import Usuarios from "./Componentes/Hooks/Usuarios/Usuarios";
+import Grafico from "./Componentes/Graficos/Grafico";
+/*import ContadorReducer from "./Contador";
+import ContadorBasicoRedux from "./ContadorBasicoRedux";
 import { Provider } from "react-redux";
 import stores from "./store/index";
+import ContadorBasicoHooks from './Componentes/Hooks/ContadorBasicoHooks';
+*/
 
 ReactDOM.render(
   <React.StrictMode>
-    <ContadorBasico />
+    <Grafico />
+    <Usuarios />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+/*
+    <ContadorBasicoHooks/>
+
+    <ContadorBasicoRedux />
     <br></br>
     <Provider store={stores}>
       <ContadorReducer />
     </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+*/
